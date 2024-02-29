@@ -1,0 +1,23 @@
+{
+  "name": "atsmanager",
+  "version": "0.1.0",
+  "description": "Assistant to state manager, atsmanager, is a simple state manager",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=dist/index.js",
+    "test": "jest"
+  },
+  "author": "hsmyc",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "esbuild": "0.20.1",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
