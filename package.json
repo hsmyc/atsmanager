@@ -1,6 +1,6 @@
 {
   "name": "atsmanager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Assistant to state manager, atsmanager, is a simple state manager",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
