@@ -4,6 +4,7 @@ type SetStateAction<T> = T | ((prevState: T) => T);
  *
  * @template T - The type of the state value.
  */
+
 type useStateReturn<T> = [
   /**
    * Gets the current state value.
@@ -22,6 +23,7 @@ type useStateReturn<T> = [
    */
   subscribe: (callback: (value: T) => void) => void
 ];
+
 /**
  * Represents a listener function that accepts a state of type T.
  *
