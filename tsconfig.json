@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "noImplicitAny": true,
-    "module": "ES2022",
+    "module": "ESNext",
     "target": "es6",
     "allowJs": true,
     "checkJs": true,

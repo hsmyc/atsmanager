@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=dist/index.js && tsc",
+    "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=dist/index.js --format=esm && tsc",
     "test": "jest"
   },
   "author": "hsmyc",
