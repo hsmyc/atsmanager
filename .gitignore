@@ -21,3 +21,4 @@ yarn-error.log
 *.log
 *.tgz
 .pnpm-debug.log*
+

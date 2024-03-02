@@ -12,12 +12,10 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "removeComments": false
   },
-  "include": [
-    "src/**/*.ts",
-    "__tests__/index.test.ts",
-    "src/types/global.d.ts"
-  ],
+  "include": ["src/**/*", "__tests__/index.test.ts", "src/types/types.d.ts"],
   "exclude": ["node_modules", "dist", "lib", "**/*.spec.ts", "build"]
 }

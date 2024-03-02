@@ -1,0 +1,12 @@
+{
+  "entryPoints": [
+    "src/index.ts",
+    "src/components/componentState.ts",
+    "src/components/globalState.ts",
+    "src/components/proxyState.ts",
+    "src/components/stateMachine.ts"
+  ],
+  "out": "docs",
+  "includes": "./src",
+  "exclude": ["**/node_modules/**"]
+}

@@ -10,3 +10,6 @@ tsconfig.json
 
 # Ignore package lock file
 package-lock.json
+
+# Ignore docs
+docs/
