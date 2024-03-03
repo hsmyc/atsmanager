@@ -1,3 +1,5 @@
+import { ListenerG, SetStateAction } from "../index";
+
 /**
  * The `GlobalStateManager` class provides a structured way to manage global state across your application
  * in an object-oriented manner. It encapsulates global state management logic, allowing for state initialization, updates,

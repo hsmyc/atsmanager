@@ -1,3 +1,5 @@
+import { machineState } from "../index";
+
 /**
  * The `StateMachine` class manages transitions between a finite number of states in an
  * object-oriented manner. Each state is represented by a `State` object, which can have optional

@@ -1,3 +1,5 @@
+import { ListenerG, SetStateAction } from "../index";
+
 /**
  * Manages application state with Proxy, allowing for reactive updates and efficient state change notifications.
  * Utilizes batch updates to optimize notification processes during rapid state changes, ensuring performance and reactivity.

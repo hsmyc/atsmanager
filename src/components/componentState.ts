@@ -1,3 +1,5 @@
+import { Listener, SetStateAction } from "../index";
+
 /**
  * The `ComponentState` class provides a structured way to manage state within components or any other part of your application
  * in an object-oriented manner. It encapsulates the state management logic, allowing for state initialization, updates,

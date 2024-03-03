@@ -14,8 +14,17 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "declarationMap": true,
-    "removeComments": false
+    "removeComments": false,
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src/**/*", "__tests__/index.test.ts", "src/types/types.d.ts"],
-  "exclude": ["node_modules", "dist", "lib", "**/*.spec.ts", "build"]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib",
+    "**/*.spec.ts",
+    "build",
+    "__tests__",
+    "src/__tests__"
+  ]
 }
