@@ -10,6 +10,7 @@ import { Listener, SetStateAction } from "../index";
  */
 export default class ComponentStateManager<T> {
   private currentState: T;
+  private lastAccessedState: T | null = null;
   private listeners: Set<Listener> = new Set();
 
   /**
@@ -34,14 +35,22 @@ export default class ComponentStateManager<T> {
   }
 
   /**
-   * Retrieves the current state managed by the instance. This method allows for accessing the state at any point,
-   * providing the latest value of the state.
+   * Retrieves the current state or the last accessed state based on the provided argument.
+   * Calling this method without an argument returns the current state and updates the last accessed state.
+   * Calling it with "back" as an argument returns the last accessed state without updating it.
    *
-   * @returns The current state of type `T`.
+   * @param S Optional parameter "back" to retrieve the last accessed state.
+   * @returns The current state or the last accessed state.
    */
-  getState = (): T => {
-    return this.currentState;
-  };
+  getState =
+    () =>
+    (S?: "back"): T | null => {
+      if (S === "back") {
+        return this.lastAccessedState;
+      }
+      this.lastAccessedState = this.currentState;
+      return this.currentState;
+    };
 
   /**
    * Updates the state managed by the instance. This method accepts either a direct new state value of type `T`
